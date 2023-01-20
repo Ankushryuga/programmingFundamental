@@ -1,0 +1,68 @@
+		///// TERNARY OPERATOR: /////
+
+TERNARY OPERATOR (also known as the conditional operator) can be used to replace if..else in certain scenarios.
+
+Ternary Operator: A ternary operator evaluates the test condition and executes a block of code based on the result of the condition.
+
+===> condition ? expression1:expression2;
+
+Here, condition is evaluated and.
+if condition is true, expression1 is executed.
+And, if condition is false, expression2 is executed.
+
+The ternary operator takes 3 operands(condition, expression1, and expression2). Hence, the name ternary operator.
+
+## Example1:
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+	double marks;
+	cout<<"Enter marks: "<<endl;
+	cin>>marks;
+	string res=(marks>=40)?"Passed":"failed";
+	cout<<"you"<<res<<"the exam"<<endl;
+return 0;
+}
+### NOTE::: We should only use the ternary operator if the resulting statement is short.
+
+
+
+		///// NESTED TERNARY OPERATOR: /////
+It is also possible to use one ternary operator inside another ternary operator. It is called the nested ternary operator in c++.
+
+## Example2: 
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+	int number;
+	string result;
+	cin>>number;
+	result=(number==0)?"Zero":((number>0)?"Positive":"Negative");
+	cout<<"Number is: "<<result<<endl;
+return 0;
+}
+
+### NOTE::: It's not recommended to use nested ternary operators. This is because it makes our code more complex..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
