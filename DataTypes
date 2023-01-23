@@ -169,12 +169,28 @@ NOTE::: Literals=values stored in a constant variable is known as a literal..
 
 
 
+#########   USER DEFINED LITERALS   ##########
+They are the literals whose functionalities and uses are created by users with the help of either functions, classes, or structure.
+They come into the picture when in-built operations are unable to fulfil our needs. The name of the functions which defines the functionality of 
+user-define operators starts with operator "" along with the name of the operator.
 
 
 
+Example: 
+#include<bits/stdc++.h>
+using namespace std;
+#define ull unsigned long long
 
+// defining functionalities of user defined literals..
+ull operator"" _hrs(ull x){
+      return x*3600;
+}
 
-
+int main(){
+      ull time1=4_hrs;
+      cout<<"time is: "<<time1<<endl;
+return 0;
+}
 
 
 
