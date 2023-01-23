@@ -1,0 +1,39 @@
+//Data type is type of data a variable can hold.
+
+C++ datatypes can be classified as follows:
+1. Primitive/Built-in DataTypes..
+2. Derived DataTypes..
+3. Abstract/User-defined DataTypes..
+
+1. Primitive DataTypes in c++: These are built in datatypes.
+1.1: Integar: The keyword int can represent integer datatypes. the range of integer is -2147483648 to 2147483647, and they take up 4 bytes of memory..
+1.2: Character: The keyword char can represent character datatypes, and they take up 1 byte of memory space.
+1.3: Boolean: The keyword bool can represent bool datatypes. true or false are the two possible values for the boolean data type.
+      bool is_true=true;      is_true is variable, that means variable requires 1 byte of memory space.
+
+1.4: Floating: The keyword float can represent floating datatypes. the float variable has a size of 4 bytes. floating point numbers(decimals and exponentials).
+    float val=12.12;
+1.5 Double Floating point: The keyword double is used to hold floating-point numbers (decimals and exponentials) with double precision. The double variable has
+    size of 8 bytes.
+    double val=2018.1932;
+    
+
+1.6: Void or valueless: The term void refers to something that has no worth. The void data type represents a valueless entity. variables of  the void type cannot be declared.
+    It is only used for functions, not returing any data.
+
+1.7: wide character: The wide-character wchar_t data type is similar to the char datatype, but its side is 2 or 4 bytes rather than 1 byte. It's used to represents characters that
+     take up more memory than a single char to represents.
+  
+     wchar_t w=L'C';
+     w here is wide-character datatype variable that has a value of 67 (L'C') and has a size of 4 bytes. This means that the variable requires 2 bytes or 4 byte of memory space.
+    
+1.8: Derived DataTypes in c++: Derived datatypes are datatypes that are created by combining primitive or built-in datatypes.
+
+
+#### There are 4 different types of derived datatypes:
+1. Function: its block of code defined to accomplish a specific purpose.
+Syntax: function_return_type function_name(parameters){}
+2. Array: int arr[4]={0,1,2,3};
+here, we have defined an integar array of size 4, which can continuously store 4 integer variable in memory.
+
+
