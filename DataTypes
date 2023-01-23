@@ -196,10 +196,20 @@ return 0;
 
 
 
+############## Tokens in C++ ##############
+1. keywords
+2. Identifiers
+3. Constants
+4. Operators
+5. Strings
+
+
+
+
 
 
      
 
 
 
-
+ 
