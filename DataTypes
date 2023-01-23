@@ -158,6 +158,28 @@ Type Qualifier                      Meaning of Qualifier..
 
 
 
+######## Every programming language is made up of tokens. Tokens are the smallest element that the compiler can interpret. Constants in c++ are the tokens that are defined at the time of initialization and the assigned value cannot be altered or updated after that.
+
+#define preprocessor directive and the const keyword are the 2 methods to define a constant..
+
+
+NOTE::: Literals=values stored in a constant variable is known as a literal..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
      
