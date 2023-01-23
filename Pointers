@@ -1,0 +1,16 @@
+// Pointers are variable tht store the address of other variables.
+// &--> Ampersand, or address of operator..
+// *--> Asterisk..
+
+#include<iostream>
+using namespace std;
+int main(){
+  int a=20;
+  cout<<"Address of a:"<<&a<<endl;
+  int *p=&a;
+  cout<<"Address of a:"<<p<<endl;
+  cout<<"Value of p: "<<*p<<endl;
+  cout<<"address of p"<<&p<<endl;
+  
+  return 0;
+}
