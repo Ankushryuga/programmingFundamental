@@ -31,9 +31,137 @@ C++ datatypes can be classified as follows:
 
 
 #### There are 4 different types of derived datatypes:
+
+
+
 1. Function: its block of code defined to accomplish a specific purpose.
 Syntax: function_return_type function_name(parameters){}
 2. Array: int arr[4]={0,1,2,3};
 here, we have defined an integar array of size 4, which can continuously store 4 integer variable in memory.
+
+3. Pointer: pointers are symbolic representation of addresses. Pointers store the addresses of the variable having the same datatype as that of the pointer.
+   The size of the pointer is either 4 bytes or 8 bytes, no matter what the data type is. They enable programs to create and change dynamic data structure, 
+   well as to imitate call-by-reference.
+   Syntax:
+   data_type* variable_name;
+   int* p;
+   cout<<sizeof(p);     //o/p: 8.
+
+4. Reference: we declare a variable as a reference, it becomes an alternate name for an existing variable. By adding '&' to a variable's declaration, it can be declared as a reference.
+   int val=1535;
+   int &ref=val;
+   Here ref becomes the reference to integer val, and now any changes in one would be automatically reflected in the other as they both represent the same memory location.
+   
+
+
+
+##### ABSTRACT OR USER-DEFINED DATATYPE IN C++
+ABSTRACT DATATYPE is type of data defined by the user.
+
+1. class: It's a user defined data type with its own set of data members and member function that can be accessed and used by establishing a class instance. A class defines the blueprint for a datatype.
+
+2. Structure: A structure datatype is a user-defined data type that combines objects of potentially differnet datatype into a single type.
+struct student{
+      char name[15];
+      char roll_no[10];
+      int marks;
+};
+   
+3.Union: It is similar to structures as it is also used to combine the different types of data into a single user-defined data type. All members of a union
+have access to the same memory. In the below-shown example, we can combine the integer datatype and the character data type into a single datatype called test. 
+In this case, as both the datatypes, integer, and character have differnet datasizes, we would take the larger datatype as the sizeof of the "new user-defined" data type test.
+we can see how changes in num are reflected in var if we adjust num.
+
+
+union test{
+      int num;
+      char var;
+};
+
+Here, num and var share the same memory. therefore, if we change any variable, the changes will automatically reflect in another variable.
+
+
+
+
+4. ENUMERATION: An enumeration or enum is datatype that the user creates. Its primarily used to give integral constant names, making the program easier
+to comprehend and maintain. In enumeration, if we do not provide the integral values explicitly to the strings, then, in that case, the strings automatically start assigning 
+the integral values starting from valu 0, and same as the case of 0-based indexing.
+      
+      enum result{
+            pass=100;
+            fail=0;
+      };
+      Here, we have given the integer value 100 to be pass and 0 as fail.
+      
+      
+      enum result res;
+      res=pass;
+      // Then, the value of res would automatically be 100.
+ 
+ 
+ 5. Typedef defined Data Type: The term typedef in c++ allows you to declare explicit new data type names. Using typedef does not create a new data class; instead, 
+    it gives an existing type a name. Because just the typedef statements would need to be updated, a program's potability might be improved by making minimal changes.
+    By permitting descriptive terms for the standard data types typedef can aid in self-documenting code.
+
+Example:
+     typedef long int ll;
+     
+     ->Now we can use ll to define the long int data type in the code...
+     example:
+     ll val;
+     val=123;
+     
+
+
+########    DATATYPE MODIFIERS IN C++    ########
+DataType Modifiers can be used to change some of the core data types further. In c++, there are 4 modifiers. int, double and char are datatypes that can be modified using these modifiers.
+
+### Modifiers are:: 
+1. Signed
+2. Unsigned
+3. Short
+4. Long
+
+     
+
+
+      DataType                Size(in Bytes)          Range
+      int or signed int             4bytes            -2,147,483,648 to 2,147,483,647.
+      unsigned  int                 4bytes             0 to 4,294,967,295
+      short int                     2bytes            -32,768 to 32,767
+      long int	                  4 Bytes     	-2,147,483,648 to 2,147,483,647
+      unsigned short int      	2 Bytes	      0 to 65,535
+      unsigned long int	            8 Bytes	      0 to 4,294,967,295
+      long long int           	8 Bytes	      -(2^63) to (2^63)-1
+      unsigned long long int  	8 Bytes	      0 to 18,446,744,073,709,551,615
+      signed char             	1 Bytes     	-128 to 127
+      unsigned char	            1 Bytes     	0 to 255
+      wchar_t	                  2 or 4 Bytes	1 wide character
+      float                   	4 Bytes	
+      double                  	8 Bytes	
+      long double	                  12 Bytes	
+
+
+
+### Type qualifiers in C++..
+Type qualifiers are used to provide a piece of additional information about the variables they precede.
+
+--->const is a type qualifier that is used with int as const int which represents the constant integer value that can't be changed during the execution of a program..
+
+
+### List of type qualifiers in c++.
+Type Qualifier                      Meaning of Qualifier..
+1.const----------------------------> If this type qualifier is used, then the value can't be changed during the execution of the program..
+2.mutable--------------------------> This qualifier is applied to non-static class members of the non-reference and non-const type when we want mutable characteristics.
+3.volatile-------------------------> This qualifier is used to tell the compiler that a variable's value may be changed in a way explicitly specified by the program.
+
+
+
+
+
+
+     
+
+
 
 
